@@ -1,4 +1,4 @@
-name: Run Build cinema-frontend
+name: cinema-frontend-build 
 
 on:
   push:
@@ -22,6 +22,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
+      working-directory: cinema-frontend
+    - run: npm run lint
       working-directory: cinema-frontend
     - run: npm run build --if-present
       working-directory: cinema-frontend
