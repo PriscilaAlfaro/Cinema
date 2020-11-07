@@ -1,4 +1,4 @@
-name: cinema-frontend
+name: Run Build cinema-frontend
 
 on:
   push:
