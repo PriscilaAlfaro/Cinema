@@ -37,8 +37,4 @@ jobs:
         MONGO_URI: mongodb://localhost:27017/cinema-test
     - run: npm run coverage
       working-directory: cinema-backend
-    - name: Coveralls
-      uses: coverallsapp/github-action@master
-      working-directory: cinema-backend
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+   
